@@ -3,5 +3,9 @@ function addNewList() {
 }
 
 function addListItem() {
-    console.log('hello world');
+    const list = document.getElementById("grocery-list");
+    const itemInput = document.getElementById("new-list-item");
+    const newItem= document.createElement("li");
+    newItem.appendChild(document.createTextNode(itemInput.value));
+    list.appendChild(newItem);
 }
